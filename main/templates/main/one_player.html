@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  One player page
+{% endblock  %}
+
+{% block content %}
+  <p>Full name: {{ player_data.full_name }}</p>
+  <p>Number: {{ player_data.number }}</p>
+  <p>Position: {{ player_data.position }}</p>
+  <p>Height: {{ player_data.height }}</p>
+  <p>Weight: {{ player_data.weight }}</p>
+  <p>Birth date: {{ player_data.birth_date }}</p>
+  <p>Experience: {{ player_data.experience }}</p>
+  <p>College: {{ player_data.college }}</p>
+{% endblock  %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Players page
+{% endblock  %}
+
+{% block content %}
+  {% for player in all_players %}
+    <a href="{% url 'one_player' player.slug %}">{{ player.full_name }}</a>
+  {% endfor %}
+{% endblock  %}
